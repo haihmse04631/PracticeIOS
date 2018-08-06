@@ -75,7 +75,9 @@ class ViewController: UIViewController {
             isEmptyTextField = true
         }
         if isEmptyTextField {
-            lblResult.text = statusResult
+            let alertController = UIAlertController(title: "Simple Calculator", message: statusResult, preferredStyle: UIAlertControllerStyle.alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alertController, animated: true, completion: nil)
             isEmptyTextField = false
             statusResult = ""
             return
