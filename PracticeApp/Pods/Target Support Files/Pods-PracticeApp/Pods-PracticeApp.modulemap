@@ -1,0 +1,6 @@
+module Pods_PracticeApp {
+  umbrella header "Pods-PracticeApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -28,7 +28,6 @@ extension String {
     return (self.rangeOfCharacter(from: nonNumberCharacterSet) == nil)
   }
   
-  
   func rw_integerValueOfFirst(characters: Int) -> Int {
     guard rw_allCharactersAreNumbers() else {
       return NSNotFound
