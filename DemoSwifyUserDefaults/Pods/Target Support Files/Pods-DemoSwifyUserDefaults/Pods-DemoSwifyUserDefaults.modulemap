@@ -1,0 +1,6 @@
+module Pods_DemoSwifyUserDefaults {
+  umbrella header "Pods-DemoSwifyUserDefaults-umbrella.h"
+
+  export *
+  module * { export * }
+}
