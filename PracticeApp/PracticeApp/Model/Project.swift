@@ -15,8 +15,11 @@ class Project: NSObject {
     
     override init() {
         super.init()
-        self.id = 1
-        self.name = "CQMS"
-        self.desc = "IOS-Team"
+    }
+    
+    init(_ id: Int, _ name: String, _ desc: String) {
+        self.id = id
+        self.name = name
+        self.desc = desc
     }
 }

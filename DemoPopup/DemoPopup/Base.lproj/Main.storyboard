@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DemoPopup" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ahc-j6-dXF">
+                                <rect key="frame" x="158.5" y="250" width="57" height="30"/>
+                                <state key="normal" title="Dialog 2"/>
+                                <connections>
+                                    <action selector="dialog2Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hc1-fs-vrB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwK-IE-0a2">
+                                <rect key="frame" x="158.5" y="330" width="57" height="30"/>
+                                <state key="normal" title="Dialog 3"/>
+                                <connections>
+                                    <action selector="dialog3Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t2M-GP-hb1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HbY-tb-9qz">
+                                <rect key="frame" x="160" y="170" width="54" height="30"/>
+                                <state key="normal" title="Dialog 1"/>
+                                <connections>
+                                    <action selector="dialog1Taped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aZO-k7-dUb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kwK-IE-0a2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BH6-EN-c4H"/>
+                            <constraint firstItem="HbY-tb-9qz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N62-N0-6XR"/>
+                            <constraint firstItem="Ahc-j6-dXF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UV4-fp-2fq"/>
+                            <constraint firstItem="Ahc-j6-dXF" firstAttribute="top" secondItem="HbY-tb-9qz" secondAttribute="bottom" constant="50" id="Xkh-fF-X4L"/>
+                            <constraint firstItem="HbY-tb-9qz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="d3u-Ax-R9A"/>
+                            <constraint firstItem="kwK-IE-0a2" firstAttribute="top" secondItem="Ahc-j6-dXF" secondAttribute="bottom" constant="50" id="oxb-B5-L20"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

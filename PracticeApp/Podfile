@@ -6,5 +6,6 @@ target 'PracticeApp' do
    pod 'RxSwift',    '~> 4.0'
    pod 'RxCocoa',    '~> 4.0'
    pod 'PopupDialog', '~> 0.8'
+   pod 'RxDataSources', '~> 3.0'
 
 end
