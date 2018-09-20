@@ -1,6 +1,9 @@
 PODS:
   - Differentiator (3.0.2)
   - DynamicBlurView (2.0.2)
+  - MSAL (0.1.4):
+    - MSAL/app-lib (= 0.1.4)
+  - MSAL/app-lib (0.1.4)
   - PopupDialog (0.8.0):
     - DynamicBlurView (~> 2.0)
   - RxCocoa (4.2.0):
@@ -12,6 +15,7 @@ PODS:
   - RxSwift (4.2.0)
 
 DEPENDENCIES:
+  - MSAL (from `https://github.com/AzureAD/microsoft-authentication-library-for-objc`, branch `release/0.1.4`)
   - PopupDialog (~> 0.8)
   - RxCocoa (~> 4.0)
   - RxDataSources (~> 3.0)
@@ -26,14 +30,27 @@ SPEC REPOS:
     - RxDataSources
     - RxSwift
 
+EXTERNAL SOURCES:
+  MSAL:
+    :branch: release/0.1.4
+    :git: https://github.com/AzureAD/microsoft-authentication-library-for-objc
+    :submodules: true
+
+CHECKOUT OPTIONS:
+  MSAL:
+    :commit: a073980635a7340467f1e8d01ca265daa282ad35
+    :git: https://github.com/AzureAD/microsoft-authentication-library-for-objc
+    :submodules: true
+
 SPEC CHECKSUMS:
   Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
   DynamicBlurView: aa6db4defc6e537eb86fc5e58dd3991666178399
+  MSAL: a09521da6e60074d5ed3df309e4704fc056aab8e
   PopupDialog: 11347197b6ac3e0548ac445d40ce68d1d407e9a0
   RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
   RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
   RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
 
-PODFILE CHECKSUM: cc9cb903b9fad986fcf20f6e8d06ac32f0b08200
+PODFILE CHECKSUM: 69f5f56fc3b93b77ba7e28f857397cabebf692b9
 
 COCOAPODS: 1.5.3

@@ -11,6 +11,7 @@
 		523D75AE212B124700CFDC61 /* LibraryViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523D75AD212B124700CFDC61 /* LibraryViewModal.swift */; };
 		523D75B0212B125A00CFDC61 /* MemoryViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523D75AF212B125A00CFDC61 /* MemoryViewModal.swift */; };
 		523D75B2212B1FD900CFDC61 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523D75B1212B1FD900CFDC61 /* MainViewController.swift */; };
+		52404C7F214AC8A9009BAA60 /* libMSAL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52404C80214AC8A9009BAA60 /* libMSAL.a */; };
 		52486EF4212F06F900E26CED /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52486EF3212F06F900E26CED /* Project.swift */; };
 		5291D114213069560066619E /* SampleBaseAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5291D113213069560066619E /* SampleBaseAlert.swift */; };
 		529368852129196A00F3839C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529368842129196A00F3839C /* AppDelegate.swift */; };
@@ -29,6 +30,7 @@
 		523D75AD212B124700CFDC61 /* LibraryViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModal.swift; sourceTree = "<group>"; };
 		523D75AF212B125A00CFDC61 /* MemoryViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryViewModal.swift; sourceTree = "<group>"; };
 		523D75B1212B1FD900CFDC61 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		52404C80214AC8A9009BAA60 /* libMSAL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMSAL.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		52486EF3212F06F900E26CED /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		5291D113213069560066619E /* SampleBaseAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleBaseAlert.swift; sourceTree = "<group>"; };
 		529368812129196A00F3839C /* PracticeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52404C7F214AC8A9009BAA60 /* libMSAL.a in Frameworks */,
 				61719794FA9331DAFAA33E55 /* libPods-PracticeApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +142,7 @@
 		C831CA4A25E16E4FD75B6CA9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				52404C80214AC8A9009BAA60 /* libMSAL.a */,
 				7EBD64A6FDD49352FAF68F29 /* libPods-PracticeApp.a */,
 			);
 			name = Frameworks;

@@ -1,0 +1,6 @@
+module Pods_DemoTableView {
+  umbrella header "Pods-DemoTableView-umbrella.h"
+
+  export *
+  module * { export * }
+}

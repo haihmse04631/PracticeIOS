@@ -9,13 +9,11 @@
 import UIKit
 
 class MainViewController: UIViewController {
-
     
-    @IBOutlet weak var idLabel: UILabel!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var descLabel: UILabel!
     
-    var project = Project()
+    @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var progressBar: UIProgressView!
+    @IBOutlet weak var progressLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,14 +21,9 @@ class MainViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func activeButtonTapped(_ sender: Any) {
-        project.id += 1
-        project.name += " a"
-        project.desc += " b"
+    
+    @IBAction func startButtonTapped(_ sender: UIButton) {
         
-        idLabel.text = "\(project.id)"
-        nameLabel.text = project.name
-        descLabel.text = project.desc
     }
     
     override func didReceiveMemoryWarning() {

@@ -2,16 +2,20 @@
 
 import UIKit
 
-var str = "Hello, playground"
-
-struct Patient {
-    var name: String
-    let yearOfBirth: Int
+func swap2Value<T>(_ a: inout T, _ b: inout T) {
+    let temp = a
+    a = b
+    b = temp
 }
 
-var mPatient = Patient(name: "IceTea", yearOfBirth: 15)
-mPatient.name = "Ahihi"
-var mPatient2 = Patient(name: "Ahoho", yearOfBirth: 20)
-print("mPatient \(mPatient.name) - mPatient2: \(mPatient2.name)")
+var string1 = "Str1"
+var string2 = "Str2"
+swap2Value(&string1, &string2)
+print("String1: \(string1) - String2: \(string2)")
+var int1 = 1
+var int2 = 2
+swap2Value(&int1, &int2)
+print("int1: \(int1) - int2: \(int2)")
+
 
 
