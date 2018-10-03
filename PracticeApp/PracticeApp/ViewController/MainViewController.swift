@@ -10,7 +10,6 @@ import UIKit
 
 class MainViewController: UIViewController {
     
-    
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var progressLabel: UILabel!
