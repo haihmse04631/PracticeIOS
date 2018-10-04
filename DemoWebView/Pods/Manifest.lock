@@ -1,21 +1,25 @@
 PODS:
+  - PageMenu (2.0.0)
   - RxCocoa (4.3.1):
     - RxSwift (~> 4.0)
   - RxSwift (4.3.1)
 
 DEPENDENCIES:
+  - PageMenu
   - RxCocoa (~> 4.0)
   - RxSwift (~> 4.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - PageMenu
     - RxCocoa
     - RxSwift
 
 SPEC CHECKSUMS:
+  PageMenu: 9c38fd7e0d9ef4b1408320f55bb907bbc0e538dc
   RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
   RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
 
-PODFILE CHECKSUM: 10459c5b019576cdf3b6567046a8a237d6bde18a
+PODFILE CHECKSUM: 5f93612ac1502266c47003d7a985984bc5df409a
 
 COCOAPODS: 1.5.3
