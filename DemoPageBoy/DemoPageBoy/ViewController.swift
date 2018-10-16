@@ -28,7 +28,7 @@ class ViewController: PageboyViewController {
         
         dataSource = self
         delegate = self
-
+        bounces = false
     }
 
 }
