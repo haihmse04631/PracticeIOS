@@ -22,6 +22,8 @@ class ViewController: PageboyViewController {
         }
         return viewControllers
     }()
+    
+    var pageIndex = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +32,12 @@ class ViewController: PageboyViewController {
         delegate = self
         bounces = false
     }
-
+    
+    
+    @IBAction func nextPageTapped(_ sender: Any) {
+        
+    }
+    
 }
 
 extension ViewController: PageboyViewControllerDataSource {
