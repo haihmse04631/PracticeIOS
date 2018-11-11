@@ -8,6 +8,32 @@
 
 import UIKit
 
+import UIKit
+
+enum StoryboardName: String {
+    case main = "Main"
+    case home = "Home"
+}
+
+extension UIViewController {
+    
+    func instantiateViewController<T>(fromStoryboard name: StoryboardName, ofType type: T.Type) -> T {
+        return storyboard(name: name).instantiateViewController(ofType: type)
+    }
+    
+    func storyboard(name: StoryboardName) -> UIStoryboard {
+        return UIStoryboard(name: name.rawValue, bundle: nil)
+    }
+}
+
+extension UIStoryboard {
+    // swiftlint:disable force_cast
+    func instantiateViewController<T>(ofType type: T.Type) -> T {
+        return instantiateViewController(withIdentifier: String(describing: type)) as! T
+    }
+}
+
+
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     @IBOutlet weak var collectionView: UICollectionView!
