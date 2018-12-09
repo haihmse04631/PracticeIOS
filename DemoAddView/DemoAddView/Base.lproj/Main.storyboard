@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kaC-bG-nYR">
-                                <rect key="frame" x="171.5" y="318.5" width="32" height="30"/>
+                                <rect key="frame" x="171.5" y="617" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="nextButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6xX-WL-QEc"/>
@@ -35,11 +35,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="kaC-bG-nYR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="a4d-g4-xQR"/>
+                            <constraint firstItem="kaC-bG-nYR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zty-Dg-acC"/>
                             <constraint firstItem="3vD-AX-lNx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bbU-hu-jTo"/>
                             <constraint firstItem="3vD-AX-lNx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ejA-fq-1w1"/>
-                            <constraint firstItem="kaC-bG-nYR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h5g-Zd-pF9"/>
                             <constraint firstItem="3vD-AX-lNx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qC4-hP-0sP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kaC-bG-nYR" secondAttribute="bottom" constant="20" id="ruw-Bu-QCB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -55,7 +55,7 @@
         <!--Demo1VC-->
         <scene sceneID="51V-Ae-Yve">
             <objects>
-                <viewController storyboardIdentifier="Demo1VC" id="WCa-wz-2NQ" customClass="Demo1VC" customModule="DemoAddView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Demo1VC" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="WCa-wz-2NQ" customClass="Demo1VC" customModule="DemoAddView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dRD-Gz-2Gh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -88,6 +88,7 @@
                     <navigationItem key="navigationItem" id="x5S-mj-miN"/>
                     <connections>
                         <outlet property="headerView" destination="SYC-hH-jy8" id="bBi-L2-J2a"/>
+                        <outlet property="nextButton" destination="xL3-J5-3y6" id="60z-MA-N4f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y4l-MT-z0R" userLabel="First Responder" sceneMemberID="firstResponder"/>
